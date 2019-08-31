@@ -12,8 +12,17 @@ function find() {
 }
 
 function findBy(filter) {
-  return db('users').where(filter);
+    return db('users').where(filter);
 }
+  
+
+// function findBy(filter) {
+//     console.log(filter)
+//     // return db('users').where(filter);
+//     let {user} =  db('users').where(filter);
+//     console.log(user.id)
+//     return user
+// }
 
 async function add(user) {
   const [id] = await db('users').insert(user);
