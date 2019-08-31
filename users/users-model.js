@@ -15,12 +15,11 @@ function findBy(filter) {
     return db('users').where(filter);
 }
   
-
 // function findBy(filter) {
 //     console.log(filter)
 //     // return db('users').where(filter);
-//     let {user} =  db('users').where(filter);
-//     console.log(user.id)
+//     let user =  db('users').where(filter);
+//     console.log(user.username)
 //     return user
 // }
 
